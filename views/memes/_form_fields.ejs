@@ -1,0 +1,13 @@
+<label>Title</label>
+<input type="text" name="title" value="<%= meme.title %>"">
+<label>Author</label>
+<select name=" author">
+<% authors.forEach(author=> { %>
+    <% if (author.id===meme.author) { %>
+        <option selected label=" <%=author.name %>" value="<%= author.id %>"></option>
+        <% } else { %>
+            <option label=" <%=author.name %>" value="<%= author.id %>"></option>
+            <% } %>
+                <% }) %>
+                    </select>
+                    <input type="text" name="author" value="<%= meme.title %>"">
